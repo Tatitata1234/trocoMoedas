@@ -19,7 +19,7 @@ public class Main {
     // escolha a maior moeda ≤ valor restante e subtraia o
     // quanto puder (por divisão inteira). Continue até zerar.
     public static void main(String[] args) {
-        log.info("Bem vindos!");
+        log.warn("Bem vindos!");
         log.warn("Digite as moedas disponíveis de acordo com o exemplo: 1,2,5");
 
         Scanner input = new Scanner(System.in);
@@ -36,12 +36,9 @@ public class Main {
         input.nextLine();
 
         for (Moeda m : moedas) {
-            int i = 0;
-            while (valor >= m.getValor() && valor > 0) {
-                i++;
-                valor -= m.getValor();
-            }
+            int i = valor / m.getValor();
             if (i != 0) {
+                valor = valor % m.getValor();
                 resposta.put(m, i);
             }
         }
