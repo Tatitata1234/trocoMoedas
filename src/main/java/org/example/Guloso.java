@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 
-public class Main {
+public class Guloso {
 
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
+    private static final Logger log = LoggerFactory.getLogger(Guloso.class);
 
     //Troco em Moedas
     //Dadas denominações de moedas e um valor VVV,
