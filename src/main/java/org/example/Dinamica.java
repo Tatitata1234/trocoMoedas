@@ -58,5 +58,3 @@ public class Dinamica {
         contagem.forEach((valorMoeda, qtd) -> log.info("{} moedas de {}", qtd, valorMoeda));
     }
 }
-//2625 moedas de 4
-//        1 moedas de 3
